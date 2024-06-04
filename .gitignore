@@ -3,7 +3,8 @@ HYSETS_data/*
 *.db
 .ipynb_checkpoints/
 __pycache__/
-processed_data/
+
+processed_data/*
 !processed_data/*.ipynb
 !processed_data/*.geojson
 !processed_data/*.csv
