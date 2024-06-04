@@ -380,12 +380,11 @@ diff_funcs = {
     'centroid': spatial_dist,
     'drainage_area_km2': log_diff,
     'aspect_deg': circular_diff,
-    'elevation_m': abs_diff, 'slope_deg': abs_diff, 
-    'land_use_forest_frac_2010': abs_diff, 'land_use_grass_frac_2010': abs_diff, 
-    'land_use_wetland_frac_2010': abs_diff, 'land_use_water_frac_2010': abs_diff, 
-    'land_use_urban_frac_2010': abs_diff, 'land_use_shrubs_frac_2010': abs_diff,  
-    'land_use_crops_frac_2010': abs_diff, 'land_use_snow_ice_frac_2010': abs_diff,
-    'logk_ice_x100': abs_diff, 'porosity_x100': abs_diff
+    # all others are absolute differences
+    # 'elevation_m': abs_diff, 'slope_deg': abs_diff, 
+    # 'logk_ice_x100': abs_diff, 'porosity_x100': abs_diff,
+    # 'prcp': abs_diff, 'tmin': abs_diff, 'tmax': abs_diff,
+    # 'vp': abs_diff, 'swe': abs_diff, 'srad': abs_diff,
 }
 
 cml_cols = get_table_cols(schema_name, 'basin_attributes')
